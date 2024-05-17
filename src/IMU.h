@@ -28,7 +28,7 @@
  * @brief  IMU (Inertial Measurement Unit) implementation
  * @author Juliane Kerpe <juliane.kerpe@web.de>
  *
- * @addtogroup HALSim
+ * @addtogroup HALTarget
  *
  * @{
  */

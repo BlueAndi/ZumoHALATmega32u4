@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://choosealicense.com/licenses/mit/)
 [![Repo Status](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-[![Release](https://img.shields.io/github/release/BlueAndi/ZumoHALInterfaces.svg)](https://github.com/BlueAndi/ZumoHALInterfaces/releases)
+[![Release](https://img.shields.io/github/release/BlueAndi/ZumoHALATmega32u4.svg)](https://github.com/BlueAndi/ZumoHALATmega32u4/releases)
 
 Hardware abstraction layer for the Pololu Zumo32U4 robot (see https://www.pololu.com/category/129/zumo-robots-and-accessories).
 
@@ -11,6 +11,7 @@ Hardware abstraction layer for the Pololu Zumo32U4 robot (see https://www.pololu
 * [Architecture](#architecture)
   * [The Principle](#the-principle)
   * [Detail](#detail)
+* [Used Libraries](#used-libraries)
 * [Issues, Ideas And Bugs](#issues-ideas-and-bugs)
 * [License](#license)
 * [Contribution](#contribution)
@@ -22,6 +23,12 @@ Hardware abstraction layer for the Pololu Zumo32U4 robot (see https://www.pololu
 
 ## Detail
 ![HAL](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/BlueAndi/ZumoHALATmega32u4/master/doc/uml/HAL.plantuml)
+
+# Used Libraries
+
+| Library                                                                 | Description                               | License |
+| ----------------------------------------------------------------------- | ----------------------------------------- | ------- |
+| [Zumo32U4 library](https://github.com/pololu/zumo-32u4-arduino-library) | Provides access to the Zumo32U4 hardware. | MIT     |
 
 # Issues, Ideas And Bugs
 If you have further ideas or you found some bugs, great! Create a [issue](https://github.com/BlueAndi/ZumoHALATmega32u4/issues) or if you are able and willing to fix it by yourself, clone the repository and create a pull request.

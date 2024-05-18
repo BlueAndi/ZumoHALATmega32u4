@@ -11,6 +11,9 @@ Hardware abstraction layer for the Pololu Zumo32U4 robot (see https://www.pololu
 * [Architecture](#architecture)
   * [The Principle](#the-principle)
   * [Detail](#detail)
+* [How to integrate the library?](#how-to-integrate-the-library)
+  * [Example](#example)
+* [Requirements to your application](#requirements-to-your-application)
 * [Used Libraries](#used-libraries)
 * [Issues, Ideas And Bugs](#issues-ideas-and-bugs)
 * [License](#license)
@@ -23,6 +26,19 @@ Hardware abstraction layer for the Pololu Zumo32U4 robot (see https://www.pololu
 
 ## Detail
 ![HAL](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/BlueAndi/ZumoHALATmega32u4/master/doc/uml/HAL.plantuml)
+
+# How to integrate the library?
+1. Add it to the _platformio.ini_ in your environment to the _lib\_deps_ section:
+    ```
+    lib_deps =
+        BlueAndi/ZumoHALATmega32u4 @ ~0.1.1
+    ```
+
+## Example
+See [example](/examples/example/) for more detail.
+
+# Requirements to your application
+* **REQ-1** The application shall use the Arduino framework.
 
 # Used Libraries
 

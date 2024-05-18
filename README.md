@@ -29,6 +29,7 @@ Hardware abstraction layer for the Pololu Zumo32U4 robot (see https://www.pololu
 | Library                                                                 | Description                               | License |
 | ----------------------------------------------------------------------- | ----------------------------------------- | ------- |
 | [Zumo32U4 library](https://github.com/pololu/zumo-32u4-arduino-library) | Provides access to the Zumo32U4 hardware. | MIT     |
+| [ZumoHALInterfaces](https://github.com/BlueAndi/ZumoHALInterfaces)      | The Zumo C++ HAL interfaces.              | MIT     |
 
 # Issues, Ideas And Bugs
 If you have further ideas or you found some bugs, great! Create a [issue](https://github.com/BlueAndi/ZumoHALATmega32u4/issues) or if you are able and willing to fix it by yourself, clone the repository and create a pull request.

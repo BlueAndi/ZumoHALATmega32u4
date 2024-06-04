@@ -8,6 +8,10 @@
         "url": "https://github.com/BlueAndi",
         "maintainer": true
     }],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BlueAndi/ZumoHALATmega32u4"
+    },
     "license": "MIT",
     "dependencies": [{
         "owner": "BlueAndi",

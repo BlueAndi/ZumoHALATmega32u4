@@ -143,7 +143,7 @@ bool IMU::magnetometerDataReady()
     return m_imuDrv.magDataReady();
 }
 
-const void IMU::getAccelerationValues(IMUData* accelerationValues)
+void IMU::getAccelerationValues(IMUData* accelerationValues) const
 {
     if (nullptr != accelerationValues)
     {
@@ -153,7 +153,7 @@ const void IMU::getAccelerationValues(IMUData* accelerationValues)
     }
 }
 
-const void IMU::getTurnRates(IMUData* turnRates)
+void IMU::getTurnRates(IMUData* turnRates) const
 {
     if (nullptr != turnRates)
     {
@@ -163,7 +163,7 @@ const void IMU::getTurnRates(IMUData* turnRates)
     }
 }
 
-const void IMU::getMagnetometerValues(IMUData* magnetometerValues)
+void IMU::getMagnetometerValues(IMUData* magnetometerValues) const
 {
     if (nullptr != magnetometerValues)
     {

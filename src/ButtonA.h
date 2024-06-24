@@ -27,7 +27,7 @@
 /**
  * @brief  Button A realization
  * @author Andreas Merkle <web@blue-andi.de>
- * 
+ *
  * @addtogroup HALTarget
  *
  * @{
@@ -61,7 +61,7 @@ public:
     /**
      * Constructs the button A adapter.
      */
-    ButtonA() : IButton(), m_button()
+    ButtonA() : IButton(), m_button(), m_lastIsPressed(false)
     {
     }
 
@@ -73,25 +73,15 @@ public:
     }
 
     /**
-     * Is button pressed or not
+     * Is button pressed or not, including debouncing.
      *
      * @return If button is pressed, returns true otherwise false.
      */
-    bool isPressed() final
-    {
-        return m_button.getSingleDebouncedPress();
-    }
-
-    /**
-     * Wait until button is released.
-     */
-    void waitForRelease() final
-    {
-        m_button.waitForRelease();
-    }
+    bool isPressed() final;
 
 private:
-    Zumo32U4ButtonA m_button; /**< Zumo button driver from Pololu */
+    Zumo32U4ButtonA m_button;        /**< Zumo button driver from Pololu */
+    bool            m_lastIsPressed; /**< Last is pressed state. */
 };
 
 /******************************************************************************

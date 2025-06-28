@@ -40,6 +40,10 @@
  * Compile Switches
  *****************************************************************************/
 
+#ifndef CONFIG_USE_OLED_DISPLAY
+#define CONFIG_USE_OLED_DISPLAY (0)
+#endif  /* CONFIG_USE_OLED_DISPLAY */
+
 /******************************************************************************
  * Includes
  *****************************************************************************/
@@ -176,7 +180,11 @@ public:
     }
 
 private:
+#if 1 == CONFIG_USE_OLED_DISPLAY
+    Zumo32U4OLED m_lcd; /**< Zumo OLED driver from Pololu */
+#else
     Zumo32U4LCD m_lcd; /**< Zumo LCD driver from Pololu */
+#endif
 };
 
 /******************************************************************************

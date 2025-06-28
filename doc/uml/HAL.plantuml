@@ -141,6 +141,7 @@ package "Zumo32U4 library" as zumo32u4Lib {
     class Zumo32U4ButtonC
     class Zumo32U4Buzzer
     class Zumo32U4LCD
+    class Zumo32U4OLED
     class Zumo32U4Encoders
     class Zumo32U4IMU
     class Zumo32U4 <<Functions>>
@@ -167,6 +168,7 @@ ButtonB *---> Zumo32U4ButtonB
 ButtonC *---> Zumo32U4ButtonC
 Buzzer *---> Zumo32U4Buzzer
 Display *---> Zumo32U4LCD
+Display *---> Zumo32U4OLED
 Encoders *---> Zumo32U4Encoders
 IMU *---> Zumo32U4IMU
 LedRed ...> Zumo32U4: <<use>>

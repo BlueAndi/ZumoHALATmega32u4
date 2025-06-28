@@ -14,6 +14,7 @@ Hardware abstraction layer for the Pololu Zumo32U4 robot (see https://www.pololu
 * [How to integrate the library?](#how-to-integrate-the-library)
   * [Example](#example)
 * [Requirements to your application](#requirements-to-your-application)
+* [OLED Display Support](#oled-display-support)
 * [Used Libraries](#used-libraries)
 * [Issues, Ideas And Bugs](#issues-ideas-and-bugs)
 * [License](#license)
@@ -39,6 +40,15 @@ See [example](/examples/example/) for more detail.
 
 # Requirements to your application
 * **REQ-1** The application shall use the Arduino framework.
+
+# OLED Display Support
+Pololu provides 2 different displays for the Zumo32U4: LCD and OLED. Per default, the LCD display is used.
+In order to use the OLED display instead, `CONFIG_USE_OLED_DISPLAY` must be set to 1 in the `platformio.ini` file.
+
+```ini
+build_flags =
+    -D CONFIG_USE_OLED_DISPLAY=1
+```
 
 # Used Libraries
 

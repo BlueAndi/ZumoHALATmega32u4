@@ -37,7 +37,7 @@ Hardware abstraction layer for the Pololu Zumo32U4 robot (see <https://www.polol
 
     ```text
     lib_deps =
-        BlueAndi/ZumoHALATmega32u4 @ ~0.1.1
+        BlueAndi/ZumoHALATmega32u4 @ ~1.1.0
     ```
 
 ### Example

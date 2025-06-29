@@ -1,6 +1,6 @@
 {
     "name": "ZumoHALATmega32u4",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Zumo C++ hardware abstraction layer for the Pololu Zumo32u4 simulation.",
     "authors": [{
         "name": "Andreas Merkle",

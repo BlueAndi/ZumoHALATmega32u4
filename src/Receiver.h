@@ -25,7 +25,7 @@
     DESCRIPTION
 *******************************************************************************/
 /**
- * @brief  Sender realization
+ * @brief  Receiver realization
  * @author Andreas Merkle <web@blue-andi.de>
  *
  * @addtogroup HALTarget
@@ -33,8 +33,8 @@
  * @{
  */
 
-#ifndef SENDER_H
-#define SENDER_H
+#ifndef RECEIVER_H
+#define RECEIVER_H
 
 /******************************************************************************
  * Compile Switches
@@ -43,7 +43,7 @@
 /******************************************************************************
  * Includes
  *****************************************************************************/
-#include "ISender.h"
+#include "IReceiver.h"
 
 /******************************************************************************
  * Macros
@@ -53,27 +53,13 @@
  * Types and Classes
  *****************************************************************************/
 
-/** This class simulates a sender, because its only relevant for the simulation. */
-class Sender : public ISender
+/** This class simulates a receiver, because its only relevant for the simulation. */
+class Receiver : public IReceiver
 {
 public:
     /**
-     * Constructs the sender adapter.
-     */
-    Sender() : ISender()
-    {
-    }
-
-    /**
-     * Destroys the sender adapter.
-     */
-    ~Sender()
-    {
-    }
-
-    /**
-     * Set channel which to send data to.
-     *
+     * Set channel which to receive data from.
+     * 
      * @param[in] channel   The channel which to use.
      */
     void setChannel(int32_t channel) final
@@ -82,14 +68,14 @@ public:
     }
 
     /**
-     * Sends data to the configured channel.
+     * Receives data from the configured channel.
      *
-     * @param[in] data  Data buffer
+     * @param[in] data  Data buffer.
      * @param[in] size  Data buffer size in bytes.
      * 
-     * @return Number of bytes written.
+     * @return Number of bytes read from stream.
      */
-    size_t send(const void* data, size_t size) const final
+    size_t receive(void* data, size_t size) final
     {
         (void)data;
         (void)size;
@@ -97,16 +83,13 @@ public:
     }
 
     /**
-     * Sends string to the configured channel.
+     * Check if any data has been received.
      *
-     * @param[in] str   String which to send.
-     * 
-     * @return Number of bytes written.
+     * @return Number of available bytes.
      */
-    size_t send(const char* str) const final
+    int available() const final
     {
-        (void)str;
-        return 0U;
+        return 0;
     }
 };
 
@@ -114,5 +97,5 @@ public:
  * Functions
  *****************************************************************************/
 
-#endif /* SENDER_H */
+#endif /* RECEIVER_H */
 /** @} */

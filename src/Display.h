@@ -41,7 +41,12 @@
  *****************************************************************************/
 
 #ifndef CONFIG_USE_OLED_DISPLAY
+
+/**
+ * If OLED display shall be used, set this to 1.
+ */
 #define CONFIG_USE_OLED_DISPLAY (0)
+
 #endif  /* CONFIG_USE_OLED_DISPLAY */
 
 /******************************************************************************

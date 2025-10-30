@@ -87,7 +87,8 @@ Board::Board() :
     m_ledRed(),
     m_ledYellow(),
     m_ledGreen(),
-    m_settings()
+    m_settings(),
+    m_power()
 {
 }
 

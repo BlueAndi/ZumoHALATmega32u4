@@ -76,14 +76,20 @@ public:
      * 
      *  @return true if power is detected on the USB connector, false otherwise.
      */
-    bool isUsbPowered();
+    bool isUsbPowered()
+    {
+        return ::usbPowerPresent();
+    }
 
     /**
      * Read battery power in millivolts.
      * 
      *  @return Actual battery voltage value in millivolts.
      */
-    uint16_t getBatteryVoltage();
+    uint16_t getBatteryVoltage()
+    {
+        return ::readBatteryMillivolts();
+    }
 };
 
 /******************************************************************************

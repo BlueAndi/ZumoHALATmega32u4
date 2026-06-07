@@ -21,6 +21,10 @@
         "owner": "pololu",
         "name": "Zumo32U4",
         "version": "^2.0.1"
+    }, {
+        "name": "EEPROM"
+    }, {
+        "name": "SPI"
     }],
     "frameworks": "arduino",
     "platforms": "*"
